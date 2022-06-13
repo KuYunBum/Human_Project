@@ -22,11 +22,11 @@
   <h1></h1>
 	<table id='customers' border="1">
 		<tr>
-			<th style="width: 10px">BNO</th>
-			<th>TITLE1</th>
-			<th style="width: 100px">WRITER</th>
-			<th style="width: 250px">REGDATE</th>
-			<th style="width: 40px">VIEWCNT</th>
+			<th style="width: 80px">번호</th>
+			<th>제목</th>
+			<th style="width: 200px">작성자</th>
+			<th style="width: 250px">작성날짜</th>
+			<th style="width: 80px">조회</th>
 		</tr>
 
 		<c:forEach items="${list}" var="boardVO">
@@ -39,7 +39,7 @@
 				<td><span class="badge bg-red">${boardVO.viewcnt }</span></td>
 			</tr>
 		</c:forEach>
-	</table>
+	</table><br>
 	<button class="btn">글쓰기</button>
 </div>
 		

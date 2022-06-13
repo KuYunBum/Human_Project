@@ -24,29 +24,15 @@ $(document).ready(function() {
 
 <div class="main">
 	<div class="box-header">
-		<h1 class="box-title">REGISTER BOARD</h1>
+		<h1 class="box-title">글쓰기</h1>
 	</div>
 	<!-- /.box-header -->
 	<!-- action에 경로가 없으면 현재 페이지 주소로 이동한다.-->
 	<form role="form" method="post">
 
-		<h3>
-			title <input type="text" name='title' placeholder="Enter Title"
-				style="width: 100%">
-		</h3>
-
-
-
-		<h2>
-			content
-			<textarea name="content" rows="8" style="width: 100%"
-				placeholder="Enter ..."></textarea>
-		</h2>
-		<h2>
-			writer <input type="text" name="writer" placeholder="Enter Writer"
-				style="width: 100%">
-		</h2>
-
+		<h3>제목<input type="text" name='title' placeholder="Enter Title" style="width: 100%"></h3>
+		<h2>내용<textarea name="content" rows="8" style="width: 100%" placeholder="Enter ..."></textarea></h2>
+		<h2>작성자<input type="text" name="writer" placeholder="Enter Writer"	style="width: 100%"></h2>
 
 	</form>
 		<!-- /.box-body -->

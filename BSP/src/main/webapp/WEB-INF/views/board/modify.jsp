@@ -4,39 +4,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false" %>
 <%@include file="../include/header.jsp"%>
-  <div class="main">
-  
-<form role="form" method="post">
-
-	<div class="box-body">
-
-		<h2>BNO <input type="text"
-				name='bno' style="width:100%" value="${boardVO.bno}"
-				readonly="readonly">
-	</h2>
-
-		<h2>
-		<input type="text"
-			name='title'  style="width:100%" value="${boardVO.title}"
-			></h2>
-	
-		<h2>
-		Content
-		<textarea  style="width:100%" name="content" rows="3"
-			>${boardVO.content}</textarea>	</h2>
-	
-		<h2>
-		Writer <input type="text"
-			name="writer" style="width:100%" value="${boardVO.writer}"
-			>
-		</h2>
-	</div>
-	<!-- /.box-body -->
-</form>
-<div class="box-footer">
-	<button type="submit" class="btn btn-primary">SAVE</button>
-	<button type="submit" class="btn btn-warning">CANCEL</button>
-</div>
 <script>
 	$(document).ready(function() {
 
@@ -54,6 +21,31 @@
 
 	});
 </script>
+
+  <div class="main">
+  
+<form role="form" method="post">
+
+	<div class="box-body">
+
+		<h2>번호 <input type="text" name='bno' style="width:100%" value="${boardVO.bno}"readonly="readonly">
+	</h2>
+
+		<h2>제목<input type="text" name='title'  style="width:100%" value="${boardVO.title}"></h2>
+	
+		<h2>내용<textarea  style="width:100%" name="content" rows="3">${boardVO.content}</textarea>	</h2>
+	
+		<h2>작성자<input type="text" name="writer" style="width:100%" value="${boardVO.writer}"
+			>
+		</h2>
+	</div>
+	<!-- /.box-body -->
+</form>
+<div class="box-footer">
+	<button type="submit" class="btn btn-primary">저장</button>
+	<button type="submit" class="btn btn-warning">취소</button>
+</div>
+
 
 
 </div>
