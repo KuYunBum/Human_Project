@@ -6,7 +6,7 @@
 <%@include file="../include/header.jsp"%>
   <div class="main">
  				<div class="box-header">
-					<h1 class="box-title">REGISTER BOARD</h3>
+					<h1 class="box-title">REGISTER BOARD</h1>
 				</div>
 				<!-- /.box-header -->
 <!-- action에 경로가 없으면 현재 페이지 주소로 이동한다.-->

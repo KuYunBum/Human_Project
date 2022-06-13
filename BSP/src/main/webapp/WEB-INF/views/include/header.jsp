@@ -16,7 +16,7 @@
 </div>
 
 <div class="navbar">
-  <a href="#">Board</a>
+  <a href="/health/board/listAll">Board</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>

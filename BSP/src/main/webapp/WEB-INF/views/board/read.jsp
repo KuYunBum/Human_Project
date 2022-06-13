@@ -13,18 +13,18 @@ $(document).ready(function(){
 	console.log(formObj);
 	
 	$(".btn-warning").on("click", function(){
-		formObj.attr("action", "/kyb/board/modify");
+		formObj.attr("action", "/health/board/modify");
 		formObj.attr("method", "get");		
 		formObj.submit();
 	});
 	
 	$(".btn-danger").on("click", function(){
-		formObj.attr("action", "/kyb/board/remove");
+		formObj.attr("action", "/health/board/remove");
 		formObj.submit();
 	});
 	
 	$(".btn-primary").on("click", function(){
-		self.location = "/kyb/board/listAll";
+		self.location = "/health/board/listAll";
 	});
 	
 });
@@ -50,7 +50,7 @@ $(document).ready(function(){
 		Writer <input type="text"
 			name="writer" style="width:100%" value="${boardVO.writer}"
 			readonly="readonly">
-		<h2>
+		</h2>
 
 <!-- /.box-body -->
 <div class="box-footer">

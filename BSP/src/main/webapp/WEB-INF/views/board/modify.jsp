@@ -29,7 +29,7 @@
 		Writer <input type="text"
 			name="writer" style="width:100%" value="${boardVO.writer}"
 			>
-		<h2>
+		</h2>
 	</div>
 	<!-- /.box-body -->
 </form>
