@@ -36,14 +36,4 @@
     <filter-name>encodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-  <servlet>
-    <description></description>
-    <display-name>asd</display-name>
-    <servlet-name>asd</servlet-name>
-    <servlet-class>com.spring.dao.asd</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>asd</servlet-name>
-    <url-pattern>/asd</url-pattern>
-  </servlet-mapping>
 </web-app>

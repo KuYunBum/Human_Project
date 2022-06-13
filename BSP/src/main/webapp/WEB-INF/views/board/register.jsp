@@ -37,7 +37,7 @@ $(document).ready(function() {
 	</form>
 		<!-- /.box-body -->
 	<div class="box-footer">
-			<button type="submit" class="btn-primary">전송</button>
+			<button type="submit" class="btn-primary">저장</button>
 			<button type="submit" class="btn-warning">목록</button>
 	</div>
 

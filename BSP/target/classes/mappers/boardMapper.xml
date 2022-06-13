@@ -14,10 +14,11 @@ select * from tbl_board where bno = #{bno} </select>
 
 
 <delete id="delete"> delete from tbl_board where bno = #{bno} </delete>
+
 <select id="listAll" resultType="com.spring.dto.BoardVO">
-
-
 <![CDATA[ select * from tbl_board where bno > 0 order by bno desc, regdate desc ]]>
- 
 </select>
+
+
+
 </mapper>
