@@ -45,7 +45,7 @@
 		console.log(formObj);
 
 		$(".btn-warning").on("click", function() {
-			self.location = "/kyb/board/listAll";
+			self.location = "/health/board/listAll";
 		});
 
 		$(".btn-primary").on("click", function() {

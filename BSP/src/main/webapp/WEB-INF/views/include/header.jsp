@@ -17,11 +17,11 @@
 
 <div class="navbar">
   <a href="/health/board/listAll">Board</a>
+  <a href="/health/ex_recomm">AI</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a class="right" href="#">Link</a>
 </div>
 
 <div class="row">

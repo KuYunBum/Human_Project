@@ -37,7 +37,7 @@
                 <li><a href="/health/ex_recomm">AI 운동 추천</a></li>
                 <li><a href="#">멤버쉽</a></li>
                 <li><a href="#">트레이너</a></li>
-                <li><a href="#">자유게시판</a></li>
+                <li><a href="/health/board/listAll">자유게시판</a></li>
                 <li><a href="#">내 주변 헬스장 찾기</a></li>
                 <li>
                     <div class="searchBox">
@@ -70,10 +70,10 @@
 	<!-- 하단 고정부분?? -->
 
     <div class="footer">
-		<hr>
-        Contact us<br>
-        Phone : 010-8282-1234<br>
-        Where : In your heart
+		<hr><br>
+        <p>Contact us<br><br>
+        Phone : 010-8282-1234<br><br>
+        Where : In your heart</p>
 
 
     </div>

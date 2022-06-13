@@ -5,17 +5,16 @@
 <%@ page session="false" %>
 <%@include file="../include/header.jsp"%>
 <script>
+	var result = '${msg}';
+	if (result == 'success') {
+		alert("처리가 완료되었습니다.");
+	}
 
-var result = '${msg}';
-if(result == 'success'){
-	alert("처리가 완료되었습니다.");
-}
-
-$(document).ready(function(){
-	$(".btn").on("click", function(){
-		location.href="/kyb/board/register"
+	$(document).ready(function() {
+		$(".btn").on("click", function() {
+			location.href = "/health/board/register"
+		});
 	});
-});
 </script>
   <div class="main">
   <h1></h1>
