@@ -49,10 +49,6 @@ $(document).ready(function(){
 	<button type="submit" class="btn btn-primary">목록</button>
 </div>
 
-			
-
-
-
 </div>
 		
 <%@include file="../include/footer.jsp"%>

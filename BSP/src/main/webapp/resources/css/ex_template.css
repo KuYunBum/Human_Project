@@ -177,43 +177,10 @@
     /* background-color: red; */
 }
 /* 상위 코드들은 필수 */
-/* 맵버쉽 부분 *//* ------------------- */
 
 
 
-.membership-choice {
-    display: flex;
-}
 
-/* 달 별 박스 */
-.msOne,
-.msTwo,
-.msThree {
-    margin: auto;
-    width: 25%;
-    height: 500px;
-    background-color: yellow;
-    text-decoration: none;
-}
-
-/* 박스에 움직임 */
-.msOne:hover {
-    transform: scale(1.07);
-    transform-origin: center;
-    transition: all 1s;
-}
-
-.msTwo:hover {
-    transform: scale(1.07);
-    transform-origin: center;
-    transition: all 1s;
-}
-
-.msThree:hover {
-    transform: scale(1.07);
-    transform-origin: center;
-    transition: all 1s;
-}
 /* --------serachBox */
 
 .searchBox{

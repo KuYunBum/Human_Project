@@ -17,68 +17,69 @@ import com.spring.service.BoardService;
 @RequestMapping("/board/*")
 public class BoardController {
 
-  private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 
-  @Inject
-  private BoardService service;
+	@Inject
+	private BoardService service;
 
-  @RequestMapping(value = "/register", method = RequestMethod.GET)
-  public void registerGET(BoardVO board, Model model) throws Exception {
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public void registerGET(BoardVO board, Model model) throws Exception {
 
-    logger.info("register get ...........");
-  }
+		logger.info("register get ...........");
+	}
 
-  @RequestMapping(value = "/register", method = RequestMethod.POST)
-  public String registPOST(BoardVO board, Model model,RedirectAttributes rttr) throws Exception {
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	public String registPOST(BoardVO board, Model model,RedirectAttributes rttr) throws Exception {
 
-    logger.info("regist post ...........");
-    logger.info(board.toString());
+		logger.info("regist post ...........");
+		logger.info(board.toString());
 
-    service.regist(board);
-    
-   rttr.addFlashAttribute("msg", "success");
-   return "redirect:/board/listAll";
-    
-  }
+		service.regist(board);
 
-  @RequestMapping(value = "/listAll", method = RequestMethod.GET)
-  public void listAll(Model model) throws Exception {
-	  
-    logger.info("show all list......................");
-    model.addAttribute("list", service.listAll());
-  }
+		rttr.addFlashAttribute("msg", "success");
+		return "redirect:/board/listAll";
 
-  @RequestMapping(value = "/read", method = RequestMethod.GET)
-  public void read(@RequestParam("bno") int bno, Model model) throws Exception {
-	    logger.info("read......................"+bno);
-    model.addAttribute(service.read(bno));
-  }
+	}
 
-  @RequestMapping(value = "/remove", method = RequestMethod.POST)
-  public String remove(@RequestParam("bno") int bno, RedirectAttributes rttr) throws Exception {
+	@RequestMapping(value = "/listAll", method = RequestMethod.GET)
+	public void listAll(Model model) throws Exception {
 
-    service.remove(bno);
+		logger.info("show all list......................");
+		model.addAttribute("list", service.listAll());
+	}
 
-    rttr.addFlashAttribute("msg", "success");
+	@RequestMapping(value = "/read", method = RequestMethod.GET)
+	public void read(@RequestParam("bno") int bno, Model model) throws Exception {
+		logger.info("read......................"+bno);
 
-    return "redirect:/board/listAll";
-  }
+		service.viewcnt(bno);
+		model.addAttribute(service.read(bno));
+	}
 
-  @RequestMapping(value = "/modify", method = RequestMethod.GET)
-  public void modifyGET(int bno, Model model) throws Exception {
+	@RequestMapping(value = "/remove", method = RequestMethod.POST)
+	public String remove(@RequestParam("bno") int bno, RedirectAttributes rttr) throws Exception {
 
-    model.addAttribute(service.read(bno));
-  }
+		service.remove(bno);
 
-  @RequestMapping(value = "/modify", method = RequestMethod.POST)
-  public String modifyPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
+		rttr.addFlashAttribute("msg", "success");
 
-    logger.info("mod post............");
+		return "redirect:/board/listAll";
+	}
 
-    service.modify(board);
-    rttr.addFlashAttribute("msg", "success");
+	@RequestMapping(value = "/modify", method = RequestMethod.GET)
+	public void modifyGET(int bno, Model model) throws Exception {
+		model.addAttribute(service.read(bno));
+	}
 
-    return "redirect:/board/listAll";
-  }
+	@RequestMapping(value = "/modify", method = RequestMethod.POST)
+	public String modifyPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
+
+		logger.info("mod post............");
+
+		service.modify(board);
+		rttr.addFlashAttribute("msg", "success");
+
+		return "redirect:/board/listAll";
+	}
 
 }

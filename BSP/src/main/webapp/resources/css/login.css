@@ -1,0 +1,207 @@
+* {
+    /* 애플폰트 */
+    font-family: 'Noto Sans KR', 'Apple SD Gothic', '맑은고딕', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar1 {
+    margin: 30px auto;
+    display: flex;
+}
+
+.navbar1 ul {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar1 ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+.navbar1 ul li a {
+    margin-top: 1100px;
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    position: relative;
+    font-size: 20px;
+}
+.navbar1 ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #af3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 33px;
+    transition: 0.5s;
+}
+
+
+.navbar1 ul li a:hover::after {
+    width: 80%;
+}
+
+.navbar2 ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #af3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 33px;
+    transition: 0.5s;
+}
+
+.navbar1 ul li a:hover::after {
+    width: 100%;
+}
+.navbar2 ul li a:hover::after{
+    width: 80%;
+}
+.navbar2 {
+    margin: 30px auto;
+    display: flex;
+    /* background-color: gray; */
+    /* position: fixed;         */
+    top:0px;
+    
+}
+
+.navbar2 ul {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar2 ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+.navbar2 ul li a {
+    text-decoration: none;
+    color: #000;
+    /* nav a 간의 떨어지는값 일단 30으로 해봤습니다. */
+    padding: 0 10px; 
+    position: relative;
+    font-size: 25px;
+}
+
+
+
+.center {
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    height: 600px;
+
+    /* background-color: red; */
+}
+
+.centerText{
+    margin-top: 100px;
+    width: 80%;
+    /* background-color: red; */
+}
+
+.footer{
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    width: 85%;
+    height: 200px;
+/*     background-color: aqua; */
+}
+.topBtn, .btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    cursor: pointer;
+}
+
+
+.topBtn, .btn:hover{
+    background-color: rgb(0, 255, 51);
+}
+
+/* 상위 코드들은 필수 */
+
+
+
+.logBox{
+    margin-top: 100px;
+    width: 30%;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.logInput{
+    margin-top: 50px;
+}
+
+.logBtn{
+    margin-top: 50px;
+}
+.join{
+    padding:20px 20px; 
+}
+.join > a{
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+.join>a:hover{
+    color: red;
+}
+/* --------serachBox */
+
+.searchBox{
+    width:100%;
+    height:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 10px;
+}
+.search{
+    position:relative;
+    width:200px;
+    margin:0 10px;
+}
+.search label{
+    position:relative;
+    width:100%;
+    align-items:center;
+}
+.search label input{
+    width: 100%;
+    height: 30px;
+    border-radius:40px;
+    padding: 5px 20px;
+    padding-left:5px;
+    outline:none;
+    text-align:center;
+    font-size:25px;
+    vertical-align:middle;
+}
+.search label .material-symbols-outlined{
+    position:absolute;
+    top:0;
+    left:10px;
+    font-size:2em;
+}
